@@ -29,6 +29,7 @@ class App extends Component {
      * @type {object}
      */
       this.state = {
+        data: this.props.songlist,
     /**
      * @property {number} sortType - 0=default, 1='A-Z', 2='Z-A'
      */
@@ -36,7 +37,7 @@ class App extends Component {
     /**
      * @property {array} songs - All data retrieved by ajax
      */
-        songs: [],
+        songs: this.props.songlist,
     /**
      * @property {string} value - Value that exists in the search input text box
      */
@@ -44,7 +45,7 @@ class App extends Component {
     /**
      * @property {string} artist - Name of the artist of the data retrieved by ajax
      */
-        artist: ""
+        artist: "Sum 41"
       };
     }
 
