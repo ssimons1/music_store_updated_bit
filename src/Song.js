@@ -12,11 +12,11 @@ class Song extends Component {
     render(){
       return(
         <div className="col-lg-3 col-md-6 mb-4">
-          <div className="card">
+          <div className="card" style={{"height":"100%"}}>
             <img className="card-img-top" src={this.props.artworkUrl100} alt="img"></img>
             <div className="card-body">
               <h4 className="card-title">{this.props.trackName}</h4>
-              <p className="card-price">{"Now for $"+this.props.trackPrice}</p>
+              <p className="card-price" style={{"font-weight":"bold"}}>{"Now for $"+this.props.trackPrice}</p>
               <p className="card-text">{this.props.artistName}</p>
             </div>
             <div className="card-footer">

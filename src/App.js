@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
 import './vendor/bootstrap/css/bootstrap.css'
-import './heroic-features.css'
 import $ from 'jquery';
 import Song from './Song.js';
 import MyButton from './MyButton.js';
 import My_form from './My_form.js';
+import songlist from './songlist.js';
 
 /**
 * @description This is my parent component, appended to the root div, returns the entire music store.
@@ -29,7 +28,6 @@ class App extends Component {
      * @type {object}
      */
       this.state = {
-        data: this.props.songlist,
     /**
      * @property {number} sortType - 0=default, 1='A-Z', 2='Z-A'
      */
@@ -37,7 +35,7 @@ class App extends Component {
     /**
      * @property {array} songs - All data retrieved by ajax
      */
-        songs: this.props.songlist,
+        songs: songlist.results,
     /**
      * @property {string} value - Value that exists in the search input text box
      */
