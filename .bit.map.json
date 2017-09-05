@@ -82,7 +82,7 @@
         "files": [
             {
                 "relativePath": "src/utils.test.js",
-                "test": false,
+                "test": true,
                 "name": "utils.test.js"
             }
         ],
